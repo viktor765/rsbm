@@ -1,0 +1,13 @@
+Bootstrap: docker
+From: nvcr.io/nvidia/pytorch:25.11-py3
+
+%labels
+    Description Container for running Reflected SB matching
+
+%post
+    python -m pip install --no-cache-dir \
+        accelerate \
+        hydra-core \
+        wandb \
+        torchmetrics[image] \
+        POT

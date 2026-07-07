@@ -1,0 +1,13 @@
+defaults:
+  - base
+  - _self_
+lr: 0.0002
+adam_betas: [0.9, 0.999]
+use_ema: true
+ema_rate: 0.999
+batch_size: 128
+n_pretrain_steps: 100_000
+n_finetune_steps: 20_000
+log_freq: 1_000
+lr_warmup_steps: 5_000
+compile_ema: true

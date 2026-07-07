@@ -1,0 +1,14 @@
+type: UNet
+directional: true
+args:
+  image_size: 64
+  in_channels: 3
+  model_channels: 128
+  out_channels: 3
+  channel_mult: [1, 2, 3, 4]
+  num_res_blocks: 4
+  attention_resolutions: [2, 4, 8]  # represents downsampling factors, i.e. this yields attention at 32x32, 16x16 and 8x8
+  dropout: 0.0
+  use_scale_shift_norm: true
+  emb_rescale: 1_000
+  num_head_channels: 64

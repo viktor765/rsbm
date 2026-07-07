@@ -1,0 +1,14 @@
+defaults:
+  - sde: brownian
+  - model: ???
+  - training: ???
+  - experiment: ???
+  - _self_
+method: alpha_imf
+seed: 2146011968  # generated with secrets.randbits(32)
+experiment_short_name: ???
+out_dir: ${hydra:run.dir}
+eval: ???
+hydra:
+  run:
+    dir: outputs/${experiment_short_name}/${sde.short_name}/${now:%Y-%m-%d}/${now:%H-%M}

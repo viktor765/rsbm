@@ -1,0 +1,46 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Envs
+.env
+.venv/
+env/
+venv/
+.conda/
+pip-wheel-metadata/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs / runs / checkpoints
+wandb/
+outputs/
+logs/
+checkpoints/
+samples/
+reports/
+runs/
+*.log
+
+# Data caches (adjust as needed)
+data/*
+!data/figs/
+!data/figs/**
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/

@@ -1,0 +1,10 @@
+dataset: image_density
+n_samples: 100_000
+image_path: data/figs/erwin-schrodinger.jpg
+image_size: 288
+image_height: 288
+preprocessing: resize_aspect
+autocontrast: false
+eps: 0.0
+gamma: 3.2
+blur: 1.0

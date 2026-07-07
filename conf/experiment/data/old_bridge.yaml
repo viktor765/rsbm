@@ -1,0 +1,10 @@
+dataset: image_density
+n_samples: 100_000
+image_path: data/figs/old-bridge.png
+image_size: 256
+preprocessing: resize
+autocontrast: true
+cutoff: 1.0
+eps: 0.005
+gamma: 2.6
+blur: 1.0

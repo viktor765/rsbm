@@ -1,0 +1,2 @@
+dataset: emnist
+labels: ['a', 'b', 'c', 'd', 'e']  # yields both upper- and lowercase

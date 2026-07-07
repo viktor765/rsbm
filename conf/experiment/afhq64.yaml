@@ -1,0 +1,26 @@
+# @package _global_
+defaults:
+  - override /model: afhq64
+  - override /training: afhq64
+  - _self_
+
+experiment_short_name: afhq64
+
+data:
+  data0:
+    dataset: afhq64
+    labels: [cat]
+  data1:
+    dataset: afhq64
+    labels: [wild]
+  num_workers: 4
+  pin_memory: true
+
+eval:
+  freq: 2_500
+  n_samples: 64
+  compute_lpips: true
+
+sde:
+  euler_steps: 100
+  sigma: 0.75

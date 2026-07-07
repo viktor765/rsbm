@@ -1,0 +1,6 @@
+type: litenet
+directional: true
+args:
+  input_dim: 2
+  time_embed_dim: 32
+  dir_embed_dim: 32

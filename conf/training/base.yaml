@@ -1,0 +1,8 @@
+checkpoint:
+  frequency: 10_000
+resume:
+  dir: null
+max_grad_norm: 1.0
+lr_warmup_steps: 0
+mixed_precision: "no"
+compile_ema: false

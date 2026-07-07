@@ -1,0 +1,31 @@
+# @package _global_
+defaults:
+  - data@data.data0: schrodinger
+  - data@data.data1: old_bridge
+  - override /model: toy2d
+  - override /training: toy2d
+  - _self_
+
+experiment_short_name: toy-sb
+
+data:
+  num_workers: 0
+  pin_memory: false
+
+sde:
+  euler_steps: 100
+  sigma: 0.15
+
+eval:
+  freq: 250
+  n_samples: 5_000
+  toy2d:
+    w2_samples: 4096
+    w2_seed: 0
+    final_artifacts: true
+    n_snapshot_times: 5
+    n_snapshot_particles: 2500
+    n_gif_paths: 128
+    n_gif_frames: 31
+    vector_grid_size: 21
+    boundary_eps: 0.001

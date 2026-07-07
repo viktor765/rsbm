@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+type: software
+message: "If you use this software, please cite the associated paper."
+title: "Reflected Schrödinger Bridge Matching"
+authors:
+  - family-names: "Häggbom"
+    given-names: "Marcus"
+  - family-names: "Nilsson"
+    given-names: "Viktor"
+license: MIT
+date-released: 2026-07-07
+url: "https://github.com/viktor765/RSBM"
+preferred-citation:
+  type: article
+  title: "Reflected Schrödinger Bridge Matching"
+  authors:
+    - family-names: "Häggbom"
+      given-names: "Marcus"
+    - family-names: "Nilsson"
+      given-names: "Viktor"
+    - family-names: "Nyquist"
+      given-names: "Pierre"
+    - family-names: "Andén"
+      given-names: "Joakim"
+  year: 2026
+  journal: "arXiv preprint arXiv:2607.03626"
+  url: "https://arxiv.org/abs/2607.03626"

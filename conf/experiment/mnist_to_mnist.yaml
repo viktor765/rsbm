@@ -1,0 +1,20 @@
+# @package _global_
+defaults:
+  - data@data.data0: mnist
+  - data@data.data1: mnist
+  - override /model: mnist
+  - override /training: mnist
+  - _self_
+
+experiment_short_name: mnist
+
+data:
+  data0.labels: ['0 - zero', '1 - one', '2 - two', '3 - three', '4 - four']
+  data1.labels: ['5 - five', '6 - six', '7 - seven', '8 - eight', '9 - nine']
+
+  num_workers: 4
+  pin_memory: true
+
+eval:
+  freq: 10_000
+  n_samples: 16

@@ -1,0 +1,5 @@
+type: reflected
+short_name: refl
+sigma: 1.0
+euler_steps: 30
+n_reflections: 11

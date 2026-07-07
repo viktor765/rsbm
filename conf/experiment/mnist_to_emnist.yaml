@@ -1,0 +1,17 @@
+# @package _global_
+defaults:
+  - data@data.data0: mnist
+  - data@data.data1: emnist
+  - override /model: mnist
+  - override /training: mnist
+  - _self_
+
+experiment_short_name: mnist
+
+data:
+  num_workers: 2
+  pin_memory: true
+
+eval:
+  freq: 2_500
+  n_samples: 64
